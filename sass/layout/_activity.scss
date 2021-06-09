@@ -1,0 +1,34 @@
+.activity {
+  padding-top: 47px;
+  padding-bottom: 94px;
+}
+
+.activities-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.activity-list-item {
+  flex-basis: calc((100% - 90px) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.activity-card {
+  position: relative;
+}
+
+.activity-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  margin: 0;
+  background-color: var(--activity-card-grey-color);
+  color: var(--primary-white-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

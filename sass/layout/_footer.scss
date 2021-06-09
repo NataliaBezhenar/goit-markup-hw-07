@@ -1,0 +1,80 @@
+.footer {
+  background-color: var(--hero-background-color);
+  color: var(--primary-white-color);
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin-right: 70px;
+}
+
+.studio-location {
+  margin-top: 20px;
+}
+
+.footer-contact-link {
+  color: var(--contact-link-text-color);
+  transition: color var(--transition-duration) var(--transition-timing-func);
+}
+
+.social-links-footer {
+  margin-top: 15px;
+}
+
+.socia-links-title-footer {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+}
+
+.address-and-social {
+  display: flex;
+}
+.footer-contact-form {
+  margin-top: 15px;
+  margin-left: 93px;
+}
+.footer-contact-form-lbl {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer-sign-up-btn {
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer-conact-form-email {
+  height: 50px;
+  width: 358px;
+  background-color: var(--hero-background-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: var(--primary-white-color);
+  padding-left: 15px;
+  margin-right: 12px;
+}
+
+.footer-conact-form-email::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-sign-up-btn::after {
+  content: "";
+  background-image: url(../images/icon-send.svg);
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
