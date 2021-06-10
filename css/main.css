@@ -329,13 +329,13 @@ body {
   transition: fill var(--transition-duration) var(--transition-timing-func);
 }
 
+.modal-form-input:focus + .contact-form-icon {
+  fill: var(--accent-color);
+}
+
 .modal-form-input-wrapper {
   position: relative;
   display: block;
-}
-
-.modal-form-input:focus + .contact-form-icon {
-  fill: var(--accent-color);
 }
 
 .modal-form-text-policy {
@@ -501,12 +501,12 @@ body {
   display: flex;
 }
 
-.features-list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .features-list-item {
   width: 270px;
+}
+
+.features-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .thumb {

@@ -71,9 +71,11 @@
   }
 }
 
-.main-nav-item:not(:last-child),
-.auth-list-item:not(:last-child) {
-  margin-right: 50px;
+.main-nav-item,
+.auth-list-item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .auth-icon {

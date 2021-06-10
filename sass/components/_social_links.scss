@@ -40,6 +40,8 @@
   }
 }
 
-.social-icons-list-item:not(:last-child) {
-  margin-right: 10px;
+.social-icons-list-item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }

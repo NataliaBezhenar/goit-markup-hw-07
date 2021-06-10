@@ -8,8 +8,10 @@
   justify-content: center;
 }
 
-.filter-btns-item:not(:last-child) {
-  margin-right: 8px;
+.filter-btns-item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 
 .card-name {
