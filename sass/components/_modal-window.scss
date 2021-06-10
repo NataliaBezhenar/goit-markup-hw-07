@@ -13,10 +13,14 @@
   transition: transform var(--transition-duration) var(--transition-timing-func),
     border-color var(--transition-duration) var(--transition-timing-func);
   border: 1px solid transparent;
-}
 
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(1.5);
+  &:focus-within {
+    border: 1px solid var(--accent-color);
+  }
+
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(1.5);
+  }
 }
 
 .modal-close-btn {
@@ -40,9 +44,9 @@
   transform: translate(-50%, -50%);
   fill: #000000;
   transition: fill var(--transition-duration) var(--transition-timing-func);
-}
 
-.modal-close-btn:hover .modal-close-icon,
-.modal-close-btn:focus .modal-close-icon {
-  fill: var(--accent-color);
+  .modal-close-btn:hover &,
+  .modal-close-btn:focus & {
+    fill: var(--accent-color);
+  }
 }
