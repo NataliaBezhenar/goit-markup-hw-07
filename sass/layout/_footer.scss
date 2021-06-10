@@ -20,6 +20,10 @@
 .footer-contact-link {
   color: var(--contact-link-text-color);
   transition: color var(--transition-duration) var(--transition-timing-func);
+  &:hover, 
+  &:focus {
+      color: var(--accent-color);
+  }
 }
 
 .social-links-footer {
@@ -49,6 +53,14 @@
 .footer-sign-up-btn {
   display: inline-flex;
   align-items: center;
+  &::after {
+    content: "";
+    background-image: url(../images/icon-send.svg);
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+  }
 }
 
 .footer-conact-form-email {
@@ -61,20 +73,10 @@
   color: var(--primary-white-color);
   padding-left: 15px;
   margin-right: 12px;
-}
-
-.footer-conact-form-email::placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-sign-up-btn::after {
-  content: "";
-  background-image: url(../images/icon-send.svg);
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
