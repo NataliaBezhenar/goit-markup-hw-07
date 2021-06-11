@@ -1,23 +1,23 @@
-.social-icons-list {
+.social-icons {
   display: flex;
   align-items: center;
 }
 
-.social-list-icon {
+.social-icons__icon {
   width: 20px;
   height: 20px;
   fill: var(--social-links-color);
   transition: fill var(--transition-duration) var(--transition-timing-func);
 
-  .social-icons-list-item-link:hover &,
-  .social-icons-list-item-link:focus & {
+  .social-icons__link:hover &,
+  .social-icons__link:focus & {
     fill: var(--primary-white-color);
   }
   .social-links-footer & {
     fill: var(--primary-white-color);
   }
 }
-.social-icons-list-item-link {
+.social-icons__link {
   width: 44px;
   height: 44px;
   background-color: var(--primary-white-color);
@@ -40,7 +40,7 @@
   }
 }
 
-.social-icons-list-item {
+.social-icons__item {
   &:not(:last-child) {
     margin-right: 10px;
   }

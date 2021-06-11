@@ -3,23 +3,23 @@
   padding-bottom: 94px;
 }
 
-.activities-list {
+.activity__list {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
 }
 
-.activity-list-item {
+.activity__item {
   flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
   margin-top: 30px;
 }
-.activity-card {
+.activity__card {
   position: relative;
 }
 
-.activity-text {
+.activity__title {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -31,4 +31,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  font-size: 14px;
+  line-height: 1.14;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
 }
