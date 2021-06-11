@@ -1,5 +1,4 @@
-.logo,
-.logo-white {
+.logo {
   color: var(--logo-black-color);
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -11,11 +10,10 @@
   margin-right: 95px;
 }
 
-.logo span,
-.logo-white span {
+.logo__span {
   color: var(--accent-color);
 }
 
-.logo-white {
+.logo__footer {
   color: var(--primary-white-color);
 }
