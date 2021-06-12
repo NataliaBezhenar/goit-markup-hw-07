@@ -23,7 +23,7 @@
   }
 }
 
-.modal-close-btn {
+.modal__close-btn {
   position: absolute;
   top: 0;
   right: 0;
@@ -37,7 +37,7 @@
   cursor: pointer;
 }
 
-.modal-close-icon {
+.modal__close-icon {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -45,8 +45,8 @@
   fill: #000000;
   transition: fill var(--transition-duration) var(--transition-timing-func);
 
-  .modal-close-btn:hover &,
-  .modal-close-btn:focus & {
+  .modal__close-btn:hover &,
+  .modal__close-btn:focus & {
     fill: var(--accent-color);
   }
 }

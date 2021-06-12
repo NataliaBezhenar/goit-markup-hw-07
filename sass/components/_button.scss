@@ -1,16 +1,12 @@
-.btn {
+.button {
   font-family: inherit;
   font-size: 16px;
   border-radius: 4px;
   cursor: pointer;
   border: none;
-}
-
-.hero__button {
   line-height: 1.86;
   letter-spacing: 0.06em;
   font-weight: 700;
-  min-width: 200px;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   margin: 0 auto;
@@ -21,7 +17,21 @@
     var(--transition-timing-func);
 }
 
-.btn-filter {
+
+.button__footer {
+  display: inline-flex;
+  align-items: center;
+  &::after {
+    content: "";
+    background-image: url(../images/icon-send.svg);
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+  }
+}
+
+.filter__button {
   line-height: 1.62;
   letter-spacing: 0.03em;
   font-weight: 500;
@@ -42,7 +52,7 @@
   }
 }
 
-.modal-form-btn {
+.modal__button {
   &:hover,
   &:focus {
     outline: none;

@@ -1,8 +1,13 @@
-.footer {
+    .footer {
   background-color: var(--hero-background-color);
   color: var(--primary-white-color);
   padding-bottom: 60px;
   padding-top: 60px;
+}
+
+
+.address-and-social {
+  display: flex;
 }
 
 .address {
@@ -10,14 +15,17 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.footer__address {
   margin-right: 70px;
 }
 
-.studio-location {
+.address__location {
   margin-top: 20px;
 }
 
-.footer-contact-link {
+.address__link {
   color: var(--contact-link-text-color);
   transition: color var(--transition-duration) var(--transition-timing-func);
   &:hover, 
@@ -26,11 +34,11 @@
   }
 }
 
-.social-links-footer {
+.footer__social-icons {
   margin-top: 15px;
 }
 
-.socia-links-title-footer {
+.footer__title {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
@@ -38,32 +46,17 @@
   margin-bottom: 20px;
 }
 
-.address-and-social {
-  display: flex;
-}
-.footer-contact-form {
+.footer__sign-up {
   margin-top: 15px;
   margin-left: 93px;
 }
-.footer-contact-form-lbl {
+
+.sign-up__label {
   display: block;
   margin-bottom: 20px;
 }
 
-.footer-sign-up-btn {
-  display: inline-flex;
-  align-items: center;
-  &::after {
-    content: "";
-    background-image: url(../images/icon-send.svg);
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    margin-left: 10px;
-  }
-}
-
-.footer-conact-form-email {
+.sign-up__email {
   height: 50px;
   width: 358px;
   background-color: var(--hero-background-color);
@@ -79,4 +72,6 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
   }
+
+
 }

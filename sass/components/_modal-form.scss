@@ -1,9 +1,9 @@
-.contact-modal-form {
+.modal__form {
   display: flex;
   flex-direction: column;
 }
 
-.contact-modal-title {
+.modal__title {
   text-align: center;
   color: var(--primary-text-color);
   font-size: 20px;
@@ -12,7 +12,7 @@
   font-weight: 700;
 }
 
-.modal-form-field {
+.modal__field {
   margin-top: 10px;
   color: var(--grey-text-color);
   font-size: 12px;
@@ -20,7 +20,7 @@
   letter-spacing: 0.01em;
 }
 
-.modal-form-input {
+.modal__input {
   width: 100%;
   height: 40px;
   margin-top: 4px;
@@ -35,7 +35,7 @@
   }
 }
 
-.modal-msg-area {
+.modal__msg-area {
   width: 100%;
   height: 120px;
   border-radius: 4px;
@@ -59,24 +59,24 @@
   }
 }
 
-.contact-form-icon {
+.modal__icon {
   position: absolute;
   top: 50%;
   left: 15px;
   transform: translateY(-50%);
   fill: var(--primary-text-color);
   transition: fill var(--transition-duration) var(--transition-timing-func);
-  .modal-form-input:focus + & {
+  .modal__input:focus + & {
     fill: var(--accent-color);
   }
 }
 
-.modal-form-input-wrapper {
+.modal__input-wrapper {
   position: relative;
   display: block;
 }
 
-.modal-form-text-policy {
+.modal__text-policy {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -96,26 +96,26 @@
   }
 }
 
-.modal-form-text-policy-link {
+.modal__link {
   color: var(--accent-color);
 }
 
-.text-area {
+.modal__field_margin {
   margin-bottom: 20px;
 }
 
-.user-policy-wrapper {
+.modal_user-policy-wrapper {
   position: relative;
   margin-bottom: 30px;
 }
 
-.modal-policy-checkbox {
+.modal__checkbox {
   bottom: 0;
   left: 2%;
-  &:focus + .modal-form-text-policy::before {
+  &:focus + .modal__text-policy::before {
     border: 1px solid var(--accent-color);
   }
-  &:checked + .modal-form-text-policy::before {
+  &:checked + .modal__text-policy::before {
     border: none;
     background-image: url(../images/check.svg);
   }
