@@ -14,7 +14,7 @@
   }
 }
 
-.thumb {
+.features__thumb {
   display: flex;
   height: 120px;
   background-color: var(--background-grey-color);
@@ -24,7 +24,7 @@
   align-items: center;
 }
 
-.thumb__title {
+.features__title {
   font-size: 14px;
   line-height: 1.14;
   font-weight: 700;
@@ -33,7 +33,7 @@
   margin-bottom: 10px;
 }
 
-.thumb__text {
+.features__text {
   color: var(--grey-text-color);
   font-size: 14px;
   line-height: 1.71;
